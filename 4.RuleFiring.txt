@@ -1,0 +1,8 @@
+example.txt
+{'big': 0.1, 'moderate': 0.8}
+
+example2.txt
+{'reduce': 0.7, 'same': 0.3333333333333333}
+
+example3.txt
+{'verysmall': 0.25, 'small': 0.6666666666666666, 'moderate': 0.75}

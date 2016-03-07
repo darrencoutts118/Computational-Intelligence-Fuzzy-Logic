@@ -1,0 +1,18 @@
+{
+	'Rules': [
+				'Rule 1 If the driving is good and the journey_time is short then the tip will be big', 
+				'Rule 2 If the driving is good or the journey_time is short then the tip will be moderate', 
+				'Rule 3 If the driving is average or the journey_time is medium then the tip will be moderate', 
+				'Rule 4 If the driving is bad and the journey_time is long then the tip will be small'
+			], 
+	'RealWorld': [
+				{'name': 'journey_time', 'value': '9'}, 
+				{'name': 'driving', 'value': '65'}
+				], 
+	'RuleBaseName': 'tippingRulebase', 
+	'Curves': 	{
+				'tip': [{'small', '50'}, {'100', 'moderate', '50'}, {'big', '50', '150'}], 
+				'journey_time': [{'10', 'short', '0'}, {'10', 'medium', '5'}, {'0', '20', 'long', '10'}], 
+				'driving': [{'0', 'bad', '30', '20'}, {'average', '20', '50'}, {'0', '100', 'good', '20', '80'}]
+				}
+}

@@ -1,0 +1,23 @@
+Rule 1 If the driving is good and the journey_time is short then the tip will be big
+{'Output': {'tip': 'big'}, 'Conjunction': 'and', 'Conditions': {'journey_time': 'short', 'driving': 'good'}, 'ID': '1'}
+
+Rule 2 If the temperature is medium and the temperature is medium then the output will be same
+{'Output': {'output': 'same'}, 'Conjunction': 'and', 'Conditions': {'temperature': 'medium'}, 'ID': '2'}
+
+Rule 3 If the driving is average or the journey_time is medium then the tip will be moderate
+{'Output': {'tip': 'moderate'}, 'Conjunction': 'or', 'Conditions': {'journey_time': 'medium', 'driving': 'average'}, 'ID': '3'}
+
+Rule 4 If the driving is bad and the journey_time is long then the tip will be small
+{'Output': {'tip': 'small'}, 'Conjunction': 'and', 'Conditions': {'journey_time': 'long', 'driving': 'bad'}, 'ID': '4'}
+
+Rule 1 If the temperature is high or the current is high then the output will be reduce
+{'Output': {'output': 'reduce'}, 'Conjunction': 'or', 'Conditions': {'current': 'high', 'temperature': 'high'}, 'ID': '1'}
+
+Rule 2 If the temperature is medium and the temperature is medium then the output will be same
+{'Output': {'output': 'same'}, 'Conjunction': 'and', 'Conditions': {'temperature': 'medium'}, 'ID': '2'}
+
+Rule 3 If the temperature is low and the current is high then the output will be same
+{'Output': {'output': 'same'}, 'Conjunction': 'and', 'Conditions': {'current': 'high', 'temperature': 'low'}, 'ID': '3'}
+
+Rule 4 If the temperature is low and the current is low then the output will be increase
+{'Output': {'output': 'increase'}, 'Conjunction': 'and', 'Conditions': {'current': 'low', 'temperature': 'low'}, 'ID': '4'}

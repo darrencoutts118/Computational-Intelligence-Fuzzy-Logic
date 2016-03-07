@@ -1,0 +1,17 @@
+{
+	'Rules': [
+				'Rule 1 If the temperature is high or the current is high then the output will be reduce', 
+				'Rule 2 If the temperature is medium and the temperature is medium then the output will be same', 
+				'Rule 3 If the temperature is low and the current is high then the output will be same', 
+				'Rule 4 If the temperature is low and the current is low then the output will be increase'], 
+	'RealWorld': [
+					{'name': 'temperature', 'value': '300'}, 
+					{'name': 'current', 'value': '17'}
+				], 
+	'RuleBaseName': 'currentRulebase', 
+	'Curves': {
+		'current': [{'10', 'low', '0'}, {'10', 'medium'}, {'high', '0', '20', '10'}], 
+		'output': [{'reduce', '50', '-50'}, {'0', '50', 'same'}, {'increase', '50'}], 
+		'temperature': [{'0', '100', 'low'}, {'150', 'medium', '200'}, {'high', '0', '400', '450', '150'}]
+	}
+}
